@@ -93,6 +93,6 @@ print(RegTreePredict<-predict(RegTree, CleanTestSet, type="class"))
 ```
 
 ##Conclusion
-The **Random Forest** modeling routine worked much better to predict 'classe', the effectiveness of the exercise, using data from the accelerometers on the belt, forearm, arm, and dumbell of 6 participants.
+The **Random Forest** modeling routine should work much better to predict 'classe', the effectiveness of the exercise, using data from the accelerometers on the belt, forearm, arm, and dumbell of 6 participants.
 
 
