@@ -58,7 +58,7 @@ myTesting <- CleanTrainData[-inTrain, ]
 dim(myTraining); dim(myTesting)
 ```
 ##Working on a Machine Learning Model
-I have a machine learning data set called 'myTraining' that needs to be a factor of **classe**. This data set will be used with a regression tree modelling routine. After training the model, I used the reminder 40% data set to test my **Regression Tree** prediction model. The performance of the model is then verified with a **confusionMatrix** that will give an accuracy level.
+I have a machine learning data set called 'myTraining' that needs to be a factor of **classe**. This data set will be used with a regression tree modelling routine. After training the model, I used the reminder 40% data set to test my **Regression Tree** prediction model. The performance of the model is then verified with a **confusionMatrix** that will give an accuracy level. This will give us the 'Out of Sample Error' measurement.
 
 ```sh
 myTraining$classe <- as.factor(myTraining$classe) 
@@ -69,7 +69,7 @@ confusionMatrix(RegTreePredict, myTesting$classe)
 ```
 
 
-We can see from the performance measurments that the **Regression Tree** does not look very promising. So, I try a **Random Forest** machine learning routine. In similar fashion as the previous modelling effort, I use the clean data set to train my model and then run a **confusionMatrix** to test its performance.
+We can see from the performance measurments that the **Regression Tree** does not look very promising. So, I try a **Random Forest** machine learning routine. In similar fashion as the previous modelling effort, I use the clean data set to train my model and then run a **confusionMatrix** to test its performance or 'out of sample error' accuracy.
 
 ```sh
 RanForest <- randomForest(classe ~ ., data=myTraining)
