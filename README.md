@@ -44,7 +44,7 @@ print(dim(training));
 
 ##Preparing a Machine Learning Training Model:
 After gainig a better understanding of the variables in the data set, I make a cleaner set of data points to make a prediction model.
-I take 60% of the 'pml-training.csv' to train a prediction model and use the remianing 40% to test the model.
+I take 60% of the 'pml-training.csv' to train a prediction model and use the remianing 40% to test the model. I use a **dim()** function after the move to check the size of the matrix.
 
 ```sh
 CleanTrainData<-training[,(colSums(is.na(training))==0)]
