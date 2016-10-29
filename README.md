@@ -69,7 +69,7 @@ confusionMatrix(RegTreePredict, myTesting$classe)
 
 ##Testing the Model against the **test** data
 I am ready to test my model against the **test** given with the project materials.
-After loading the **test** data set, it is necessary to clean and prepare the test data set as we did with the modeling set. Please observe that the **test** takes out the 'classe' variable and we use the **dim()** function to make sure the matrix has changed.
+After loading the **test** data set, it is necessary to clean and prepare the test data set as we did with the modeling set. Please observe that the **test** has also a 'problem_id' column that I take out and I use the **dim()** function to make sure the matrix has changed.
 So...
 
 ```sh
