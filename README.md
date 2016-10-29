@@ -37,7 +37,7 @@ print(dim(training));
 ```
 
 ##Preprocessing
-There are multiple Pre-Processing techniques that can be used to understand the data set. Among the techniques we have for consideration I explored **Zero- and Near-Zero Variance Predictors**, **Scaling**, and **Linear Depedencies**. Nevertheless, if we use **Random Forest** in our model building it will include sufficient subsampling as referenced on page 320 in "http://www.stat.berkeley.edu/~rabbee/s154/ISLR_First_Printing.pdf"
+There are multiple Pre-Processing techniques that can be used to understand the data set. Among the techniques we have for consideration I considered **Zero- and Near-Zero Variance Predictors**, **Scaling**, and **Linear Depedencies**. Nevertheless, if we use **Random Forest** in our model building it will include sufficient subsampling as referenced on page 320 in "http://www.stat.berkeley.edu/~rabbee/s154/ISLR_First_Printing.pdf" and we can move comfortably forward.
 
 ##Preparing a Machine Learning Training Model:
 After gainig a better understanding of the variables in the data set, I make a cleaner set of data points to make a prediction model.
