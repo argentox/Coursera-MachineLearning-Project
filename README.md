@@ -75,6 +75,8 @@ RanForest <- randomForest(classe ~ ., data=myTraining)
 RanForestPredict <- predict(RanForest, myTesting, type = "class")
 confusionMatrix(RanForestPredict, myTesting$classe)
 ```
+The accuracy of the Random Forest is much more promising than the earlier model. 
+Hence, I decided to use the later modeling routine to validated against the Project test data found in 'pml-testing.csv'.
 
 ##Testing the Model against the **test** data
 I am ready to test my model against the Project **test** given with the project materials.
@@ -93,5 +95,7 @@ print("Predicted class for the test data:\n");
 print(RegTreePredict<-predict(RegTree, CleanTestSet, type="class"))
 ```
 
+##Conclusion
+The **Random Forest** modeling routine worked much better to predict 'classe', the effectiveness of the exercise, using data from the accelerometers on the belt, forearm, arm, and dumbell of 6 participants.
 
 
