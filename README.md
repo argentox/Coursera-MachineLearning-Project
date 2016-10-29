@@ -67,8 +67,17 @@ RegTreePredict<-predict(RegTree, myTesting, type="class")
 confusionMatrix(RegTreePredict, myTesting$classe)
 ```
 
+
+We can see from the performance measurments that the **Regression Tree** does not look very promising. So, I try a **Random Forest** machine learning routine. In similar fashion as the previous modelling effort, I use the clean data set to train my model and then run a **confusionMatrix** to test its performance.
+
+```sh
+RanForest <- randomForest(classe ~ ., data=myTraining)
+RanForestPredict <- predict(RanForest, myTesting, type = "class")
+confusionMatrix(RanForestPredict, myTesting$classe)
+```
+
 ##Testing the Model against the **test** data
-I am ready to test my model against the **test** given with the project materials.
+I am ready to test my model against the Project **test** given with the project materials.
 After loading the **test** data set, it is necessary to clean and prepare the test data set as we did with the modeling set. Please observe that the **test** has also a 'problem_id' column that I take out and I use the **dim()** function to make sure the matrix has changed.
 So...
 
@@ -83,4 +92,6 @@ dim(CleanTestSet)
 print("Predicted class for the test data:\n");
 print(RegTreePredict<-predict(RegTree, CleanTestSet, type="class"))
 ```
+
+
 
