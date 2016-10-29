@@ -56,5 +56,31 @@ myTraining <- CleanTrainData[inTrain, ]
 myTesting <- CleanTrainData[-inTrain, ]
 dim(myTraining); dim(myTesting)
 ```
+##Working on a Machine Learning Model
+I have a machine learning data set called 'myTraining' that needs to be a factor of **classe**. This data set will be used with a regression tree modelling routine. After training the model, I used the reminder 40% data set to test my **Regression Tree** prediction model. The performance of the model is then verified with a **confusionMatrix** that will give an accuracy level.
 
+```sh
+myTraining$classe <- as.factor(myTraining$classe) 
+myTesting$classe <- as.factor(myTesting$classe)
+RegTree <- rpart(classe ~ ., data=myTraining, method="class")
+RegTreePredict<-predict(RegTree, myTesting, type="class")
+confusionMatrix(RegTreePredict, myTesting$classe)
+```
+
+##Testing the Model against the **test** data
+I am ready to test my model against the **test** given with the project materials.
+After loading the **test** data set, it is necessary to clean and prepare the test data set as we did with the modeling set. Please observe that the **test** takes out the 'classe' variable and we use the **dim()** function to make sure the matrix has changed.
+So...
+
+```sh
+test_data=url("https://d396qusza40orc.cloudfront.net/predmachlearn/pml-testing.csv")
+testing <- read.csv(test_data, header = TRUE, na.strings=c("NA","#DIV//0!",""))
+print(dim(testing))
+CleanTestSet<-testing[,(colSums(is.na(testing))==0)]
+CleanTestSet<- CleanTestSet[-(1:7)]
+CleanTestSet<- CleanTestSet[-53]
+dim(CleanTestSet)
+print("Predicted class for the test data:\n");
+print(RegTreePredict<-predict(RegTree, CleanTestSet, type="class"))
+```
 
