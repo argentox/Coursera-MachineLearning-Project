@@ -37,6 +37,7 @@ print(dim(training));
 ```
 
 ##Preprocessing
+There are multiple Pre-Processing techniques that can be used to understand the data set. Among the techniques we have for consideration I explored **Zero- and Near-Zero Variance Predictors**, **Scaling**, and **Linear Depedencies**. Nevertheless, I start by using the 'preProcess' function because it can be used for many operations on predictors.
 
 ##Normalizing
 
