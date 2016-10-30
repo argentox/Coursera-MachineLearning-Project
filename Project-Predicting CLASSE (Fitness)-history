@@ -1,0 +1,394 @@
+library(caret); library(kernlab); data(spam)
+local({pkg <- select.list(sort(.packages(all.available = TRUE)),graphics=TRUE)
+if(nchar(pkg)) library(pkg, character.only=TRUE)})
+utils:::menuInstallPkgs()
+library(caret); library(kernlab); data(spam)
+a<-available.pachages()
+a <- available.pachages()
+available.pachages()
+<- available.pachages()
+a
+help("available")
+??available
+mkdir work
+R
+q()
+$
+??
+?
+mkdir work
+mkdir
+?? mkdir
+$
+mkdir
+mkdir work
+local({pkg <- select.list(sort(.packages(all.available = TRUE)),graphics=TRUE)
+if(nchar(pkg)) library(pkg, character.only=TRUE)})
+available.packages
+available.packages()
+head(rownames(a), 3)
+install.packages("slidify")
+install.packages("caret")
+install.packages("phonR")
+mkdir work
+q ()
+$
+R
+r
+mkdir
+mkdir work
+cd
+local({fn<-choose.files(filters=Filters[c('R','txt','All'),],index=4)
+file.show(fn,header=fn,title='')})
+local({fn<-choose.files(filters=Filters[c('R','txt','All'),],index=4)
+file.show(fn,header=fn,title='')})
+mkdir work
+available.packages()
+head(rownames(a), 3)
+install.packages("slidify")
+utils:::menuInstallPkgs()
+library(caret); library(kernlab); data(spam)
+intrain <- spam[inTrain,]
+utils:::menuInstallPkgs()
+utils:::menuInstallPkgs()
+library(caret); library(kernlab); data(spam)
+intrain <- createDataPartition(y=spam$type,
+p=0.75, list=FALSE)
+training <- spam[inTrain,]
+intrain <- createDataPartition(y=spam$type, p=0.75, list=FALSE)
+training <- spam[inTrain,]
+training <- spam[intrain,]
+testing <- spam[intrain,]
+dim(training)
+set.seed(32343)
+modelFit <- train(type~.,data=training,method="glm"
+modelFit
+modelFit <- train(type~.,data=training, method="glm")
+modelFit <- train(type~.,data=training, method="glm") modelFit
+modelFit <- train(type~.,data=training, method="glm")
+set.seed(32343)
+modelFit <- train(type ~.,data=training, method="glm")
+inTrain <- createDataPartition(y=spam$type,
+p=0.75, list=FALSE)
+training <- spam[inTrain,]
+testing <- spam[inTrain,]
+dim(training)
+modelFit <- train(type ~.,data-training, method="glm")
+modelFit <- train(type~.,data-training, method="glm")
+set.seed(32343)
+modelFit <- train(type ~.,data-training, method="glm")
+?train
+library()
+q()
+library(caret); library(kernlab); data(spam)
+inTrain <- createDataPartition(y=spam$type, p=0.75, list=FALSE)
+training <- spam[inTrain,]
+testing <- spam[inTrain,]
+dim(training)
+set.seed(32343)
+modelFit <- train(type ~.,data=training, method="glm")
+modelFit <- train(type ~.,data=training, method="glm")modelFit
+modelFit <- train(type~.,data=training, method="glm")modelFit
+modelFit <- train(type~.,data=training, method="glm")
+modelFit <- train(type ~.,data=training, method="glm")
+?modelFit
+??modelFit
+library(caret); library(kernlab); data(spam)
+inTrain <- createDataPartition(y=spam$type, p=0.75, list=FALSE)
+training <- spam[inTrain,]
+testing <- spam[inTrain,]
+dim(training)
+modelFit <- train(type ~.,data=training, method="glm")
+install.packages("caret", dependencies = c("Depends", "Suggests"))
+library(caret)
+library(mlbench)
+data(Sonar)
+library(caret); library(kernlab); data(spam)
+inTrain <- createDataPartition(y=spam$type, p=0.75, list=FALSE)
+training <- spam[inTrain,]
+testing <- spam[inTrain,]
+dim(training)
+set.seed(32343)
+modelFit <- train(type ~.,data=training, method="glm")
+install.packages('caret', dependencies = TRUE)
+modelFit <- train(type ~.,data=training, method="glm")
+modelFit
+modelFit$finalModel
+predictions <- predict(modelFit,newdata=testing)
+predictions
+confusionMatrix(predictions,testing$type)
+library(AppliedPredictiveModeling)
+utils:::menuInstallPkgs()
+library(AppliedPredictiveModeling)
+data(AlzheimerDisease)
+adData = data.frame(diagnosis,predictors)
+trainIndex = createDataPartition(diagnosis,p=0.5,list=FALSE)
+training = adData[trainIndex,]
+testing = adData[-trainIndex,]
+dim(training)
+library(AppliedPredictiveModeling)
+data(concrete)
+library(caret)
+set.seed(1000)
+inTrain = createDataPartition(mixtures$CompressiveStrength, p = 3/4)[[1]]
+training = mixtures[ inTrain,]
+testing = mixtures[-inTrain,]
+adData = data.frame(diagnosis,predictors)
+testIndex = createDataPartition(diagnosis, p = 0.50,list=FALSE)
+training = adData[-testIndex,]
+testing = adData[testIndex,]
+dim(training)
+adData = data.frame(diagnosis,predictors)
+testIndex = createDataPartition(diagnosis, p = 0.5,list=FALSE)
+training = adData[-testIndex,]
+testing = adData[testIndex,]
+dim(training)
+library(AppliedPredictiveModeling)
+data(concrete)
+library(caret)
+set.seed(1000)
+inTrain = createDataPartition(mixtures$CompressiveStrength, p = 3/4)[[1]]
+training = mixtures[ inTrain,]
+testing = mixtures[-inTrain,]
+library(AppliedPredictiveModeling)
+data(concrete)
+library(caret)
+set.seed(1000)
+inTrain = createDataPartition(mixtures$CompressiveStrength, p = 3/4)[[1]]
+training = mixtures[ inTrain,]
+testing = mixtures[-inTrain,]
+library(caret)
+library(AppliedPredictiveModeling)
+set.seed(3433)
+data(AlzheimerDisease)
+adData = data.frame(diagnosis,predictors)
+inTrain = createDataPartition(adData$diagnosis, p = 3/4)[[1]]
+training = adData[ inTrain,]
+testing = adData[-inTrain,]
+library(caret)
+library(AppliedPredictiveModeling)
+set.seed(3433)data(AlzheimerDisease)
+adData = data.frame(diagnosis,predictors)
+inTrain = createDataPartition(adData$diagnosis, p = 3/4)[[1]]training = adData[ inTrain,]
+testing = adData[-inTrain,]
+library(AppliedPredictiveModeling)
+data(concrete)
+library(caret)
+set.seed(1000)
+inTrain = createDataPartition(mixtures$CompressiveStrength, p = 3/4)[[1]]
+training = mixtures[ inTrain,]
+testing = mixtures[-inTrain,]
+data(training)
+dim(training); dim(testing)
+summary(concrete)
+qplot(cement,water,data=training)
+gplot
+qplot(Cement,water,data=training)
+qplot(Cement,Water,data=training)
+qplot(Cement,Water,colour=CompressiveStrength,data=training)
+qq <- qplot(Cement,Water,colour=CompressiveStrength,data=training)
+qq + geom_smooth(method='lm', formula=y~x)
+cutCS <- cut2(training$CompressiveStrength, g=3)
+library(Hmisc)
+local({pkg <- select.list(sort(.packages(all.available = TRUE)),graphics=TRUE)
+if(nchar(pkg)) library(pkg, character.only=TRUE)})
+utils:::menuInstallPkgs()
+local({pkg <- select.list(sort(.packages(all.available = TRUE)),graphics=TRUE)
+if(nchar(pkg)) library(pkg, character.only=TRUE)})
+cutCS <- cut2(training$CompressiveStrength, g=3)
+table(cutCS)
+pl <- gplot(cutCS,Cement,Water, data=training,fill=cutCS)
+local({pkg <- select.list(sort(.packages(all.available = TRUE)),graphics=TRUE)
+if(nchar(pkg)) library(pkg, character.only=TRUE)})
+pl <- gplot(cutCS,Cement,Water, data=training,fill=cutCS)
+qq <- qplot(Cement,Water,colour=CompressiveStrength,data=training)
+qplot(Cement,Water,colour=CompressiveStrength,data=training)
+qq + geom_smooth(method='lm',formula=y~x)
+table(cutCS)
+pl <- qplot(cutCS,Cement,fill=cutCS,geom=c("boxplot"))
+pl
+pl <- qplot(cutCS,Cement, data=training,fill=cutCS,geom=c("boxplot"))
+pl
+summary(concrete)
+cutCS <- cut2(training$CompressiveStrength, g = 4)
+summary(cutCS)
+featurePlot(x = training[, names], y = cutCS, plot = "box")
+ggplot(data = training, aes(y = index, x = cutCS)) + geom_boxplot() + geom_jitter(col = "blue") + 
+    theme_bw()
+summary(cutCS)
+names <- colnames(concrete)
+names <- names[-length(names)]
+featurePlot(x = training[, names], y = training$CompressiveStrength, plot = "pairs")
+index <- seq_along(1:nrow(training))
+ggplot(data = training, aes(x = index, y = CompressiveStrength)) + geom_point() + 
+    theme_bw()
+cutCS <- cut2(training$CompressiveStrength, g = 4)
+summary(cutCS)
+ggplot(data = training, aes(y = index, x = cutCS)) + geom_boxplot() + geom_jitter(col = "blue") +  theme_bw()
+featurePlot(x = training[, names], y = cutCS, plot = "box")
+gplot(index,cutCS,data=training)
+qplot(index,cutCS,data=training)
+rm(list=ls())
+library(ggplot2)
+library(lattice)
+library(AppliedPredictiveModeling)
+library(caret)
+data(AlzheimerDisease)
+data(concrete)
+set.seed(975)
+inTrain = createDataPartition(mixtures$CompressiveStrength, p = 3/4)[[1]]
+training = mixtures[ inTrain,]
+testing = mixtures[-inTrain,]
+qplot(CompressiveStrength, Cement, data=concrete)
+index<-colnames(concrete[,c(1,2,3,4,5,6,7)])
+featurePlot(x=training[,index], y=training$CompressiveStrength, plot="pairs")
+rm(list=ls())
+library(ggplot2)
+library(lattice)
+library(AppliedPredictiveModeling)
+library(caret)
+data(AlzheimerDisease)
+data(concrete)
+set.seed(975)
+inTrain = createDataPartition(mixtures$CompressiveStrength, p = 3/4)[[1]]
+training = mixtures[ inTrain,]
+testing = mixtures[-inTrain,]
+qplot(CompressiveStrength, Cement, data=concrete)
+index<-colnames(concrete[,c(1,2,3,4,5,6,7)])
+featurePlot(x=training[,index], y=training$CompressiveStrength, plot="pairs")
+rm(list=ls())
+library(AppliedPredictiveModeling)
+data(concrete)
+library(caret)
+set.seed(975)
+inTrain = createDataPartition(mixtures$CompressiveStrength, p = 3/4)[[1]]
+training = mixtures[ inTrain,]
+testing = mixtures[-inTrain,]
+qplot(Superplasticizer, data=training) 
+library(caret)
+library(AppliedPredictiveModeling)
+set.seed(3433)data(AlzheimerDisease)
+adData = data.frame(diagnosis,predictors)
+inTrain = createDataPartition(adData$diagnosis, p = 3/4)[[1]]training = adData[ inTrain,]
+testing = adData[-inTrain,]
+set.seed(3433)
+## grep the predictors starting with 'IL'
+IL_str <- grep("^IL", colnames(training), value = TRUE)
+## make a subset of these predictors
+predictors_IL <- predictors[, IL_str]
+df <- data.frame(diagnosis, predictors_IL)
+inTrain = createDataPartition(df$diagnosis, p = 3/4)[[1]]
+training = df[inTrain, ]
+testing = df[-inTrain, ]
+## train the data using the first method
+modelFit <- train(diagnosis ~ ., method = "glm", data = training)
+library(caret)
+library(AppliedPredictiveModeling)
+set.seed(3433)
+data(AlzheimerDisease)
+adData = data.frame(diagnosis,predictors)
+inTrain = createDataPartition(adData$diagnosis, p = 3/4)[[1]]training = adData[ inTrain,]
+inTrain = createDataPartition(adData$diagnosis,p=3/4)[[1]]
+training = adData[inTrain,]
+testing = adData[-inTrain,]
+set.seed(3433)
+## grep the predictors starting with 'IL'
+IL_str <- grep("^IL", colnames(training), value = TRUE)
+## make a subset of these predictors
+predictors_IL <- predictors[, IL_str]
+df <- data.frame(diagnosis, predictors_IL)
+inTrain = createDataPartition(df$diagnosis, p = 3/4)[[1]]
+training = df[inTrain, ]
+testing = df[-inTrain, ]
+## train the data using the first method
+modelFit <- train(diagnosis ~ ., method = "glm", data = training)
+A1 <- C1$overall[1]
+modelFit <- train(diagnosis ~ ., method = "glm", data = training)
+predictions <- predict(modelFit, newdata = testing)
+C1 <- confusionMatrix(predictions, testing$diagnosis)
+print(C1)
+A1 <- C1$overall[1]
+## do similar steps with the caret package
+modelFit <- train(training$diagnosis ~ ., method = "glm", preProcess = "pca", 
+    data = training, trControl = trainControl(preProcOptions = list(thresh = 0.8)))
+C2 <- confusionMatrix(testing$diagnosis, predict(modelFit, testing))
+A1 <- C1$overall[1]
+modelFit <- train(training$diagnosis ~ ., method = "glm", preProcess = "pca", 
+    data = training, trControl = trainControl(preProcOptions = list(thresh = 0.8)))
+data(iris);library(ggplot2)
+names(iris)
+table(iris$Species)
+inTrain<-createDataPartition(y=iris$Species,p=0.7,list=FALSE)
+training<-iris[inTrain,]
+testing<-iris[-inTrain,]
+dim(training); dim(testing)
+qplot(Petal.Width,Sepal.Width,colour=Species,data=training)
+library(caret)
+modFit<-train(Species~.,method="rpart",data=training)
+print(modFit$finalModel)
+plot(modFit$finalModel,uniform=TRUE,main="Classification Tree"
+test(modFit$finalModel, use.n=TRUE,all=TRUE,cex=.8)
+plot(modFit$finalModel,uniform=TRUE,main="Classification Tree")text(modFit$finalModel, use.n=TRUE,all=TRUE,cex=.8)
+plot(modFit$finalModel,uniform=TRUE,main="Classification Tree")
+text(modFit$finalModel, use.n=TRUE,all=TRUE,cex=.8)
+library(rattle)
+local({pkg <- select.list(sort(.packages(all.available = TRUE)),graphics=TRUE)
+if(nchar(pkg)) library(pkg, character.only=TRUE)})
+utils:::menuInstallPkgs()
+library(rattle)
+fancyRpartPlot(modFit$finalModel)
+text(modFit$finalModel, use.n=TRUE,all=TRUE,cex=.8)
+fancyRpartPlot(modFit$finalModel)
+library(rattle)
+fancyRpartPlot(modFit$finalModel)
+local({pkg <- select.list(sort(.packages(all.available = TRUE)),graphics=TRUE)
+if(nchar(pkg)) library(pkg, character.only=TRUE)})
+fancyRpartPlot(modFit$finalModel)
+library(rattle)
+fancyRpartPlot(modFit$finalModel)
+local({pkg <- select.list(sort(.packages(all.available = TRUE)),graphics=TRUE)
+if(nchar(pkg)) library(pkg, character.only=TRUE)})
+library(rattle)
+fancyRpartPlot(modFit$finalModel)
+q()
+library(rattle)
+fancyRpartPlot(modFit$finalModel)
+text(modFit$finalModel, use.n=TRUE,all=TRUE,cex=.8)
+data(iris);library(ggplot2)
+names(iris)
+table(iris$Species)
+inTrain<-createDataPartition(y=iris$Species,p=0.7,list=FALSE)
+q()
+library(data.table)
+library(rpart)
+library(rattle)
+library(randomForest)
+library(caret)
+train_data=url("https://d396qusza40orc.cloudfront.net/predmachlearn/pml-training.csv")
+training <-read.csv(train_data, header = TRUE, na.strings=c("NA","#DIV//0!",""))
+print(dim(training)); 
+CleanTrainData<-training[,(colSums(is.na(training))==0)]
+CleanTrainData <- CleanTrainData[-(1:7)]
+dim(CleanTrainData )
+inTrain <- createDataPartition(CleanTrainData$classe, p=0.6, list=FALSE)
+myTraining <- CleanTrainData[inTrain, ]
+myTesting <- CleanTrainData[-inTrain, ]
+dim(myTraining); dim(myTesting)
+myTraining$classe <- as.factor(myTraining$classe) 
+myTesting$classe <- as.factor(myTesting$classe)
+RegTree <- rpart(classe ~ ., data=myTraining, method="class")
+RegTreePredict<-predict(RegTree, myTesting, type="class")
+confusionMatrix(RegTreePredict, myTesting$classe)
+RanForest <- randomForest(classe ~ ., data=myTraining)
+RanForestPredict <- predict(RanForest, myTesting, type = "class")
+confusionMatrix(RanForestPredict, myTesting$classe)
+test_data=url("https://d396qusza40orc.cloudfront.net/predmachlearn/pml-testing.csv")
+testing <- read.csv(test_data, header = TRUE, na.strings=c("NA","#DIV//0!",""))
+print(dim(testing))
+CleanTestSet<-testing[,(colSums(is.na(testing))==0)]
+CleanTestSet<- CleanTestSet[-(1:7)]
+CleanTestSet<- CleanTestSet[-53]
+dim(CleanTestSet)
+print("Predicted class for the test data:\n");
+print(RegTreePredict<-predict(RegTree, CleanTestSet, type="class"))
+save.image("\\\\DOX\\eric\\DATA\\D O C U M E N T S\\COURSE - Machine Learning\\Project-Prediction(Fitness)\\Project-Predicting CLASSE (Fitness)")
